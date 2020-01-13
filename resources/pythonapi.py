@@ -12,10 +12,14 @@ from sklearn.svm import SVC
 
 class PythonAPI(Resource):
 
-  Income=[{"result" :'<=50K'}, {"result":'>50K'}]
+  
 
 
   def get(self, val):
+
+    Income=[{"result" :'<=50K'}, {"result":'>50K'}]
+
+
     with open("/app/resources/scaler.pkl", 'rb') as file1:
     #scaler_pkl = pickle.load(file1)
       SCALER_PKL = pickle.load(file1)
