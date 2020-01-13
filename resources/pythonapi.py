@@ -27,7 +27,7 @@ class PythonAPI(Resource):
     #return output
     return(incomerange) , 200
 
-  def put(self, id):
+  def put(self, val):
     values = val.split("_")
 
     #reshape values
