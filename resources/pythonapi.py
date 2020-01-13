@@ -8,9 +8,11 @@ from sklearn.svm import SVC
 
 
 
-Income=[{"result" :'<=50K'}, {"result":'>50K'}]
+
 
 class PythonAPI(Resource):
+
+  Income=[{"result" :'<=50K'}, {"result":'>50K'}]
 
   def __init__(self):
     with open("scaler.pkl", 'rb') as file1:
