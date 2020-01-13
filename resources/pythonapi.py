@@ -15,11 +15,11 @@ class PythonAPI(Resource):
   Income=[{"result" :'<=50K'}, {"result":'>50K'}]
 
   def __init__(self):
-    with open("./scaler.pkl", 'rb') as file1:
+    with open("/app/resources/scaler.pkl", 'rb') as file1:
       #scaler_pkl = pickle.load(file1)
       SCALER_PKL = pickle.load(file1)
 
-    with open("./adultincome.pkl", 'rb') as file2:
+    with open("/adultincome.pkl", 'rb') as file2:
       #svc_pkl = pickle.load(file2)
       SVC_PKL = pickle.load(file2)
 
