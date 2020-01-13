@@ -25,4 +25,4 @@ class PythonAPI(Resource):
     incomerange=Income[output[0]]
 
     #return output
-    return(incomerange["result"]) , 200
+    return(incomerange) , 200
