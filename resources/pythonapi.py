@@ -19,7 +19,7 @@ class PythonAPI(Resource):
       #scaler_pkl = pickle.load(file1)
       SCALER_PKL = pickle.load(file1)
 
-    with open("/adultincome.pkl", 'rb') as file2:
+    with open("/app/resources/adultincome.pkl", 'rb') as file2:
       #svc_pkl = pickle.load(file2)
       SVC_PKL = pickle.load(file2)
 
