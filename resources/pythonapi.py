@@ -10,7 +10,7 @@ Income=[{"result" :'<=50K'}, {"result":'>50K'}]
 
 class PythonAPI(Resource):
   def get(self, val):
-    values = val.split()
+    values = val.split("_")
 
     #reshape values
     valarray=np.asarray(values[:10])
