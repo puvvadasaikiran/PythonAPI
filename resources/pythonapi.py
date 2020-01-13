@@ -17,9 +17,9 @@ class PythonAPI(Resource):
     valarray=valarray.reshape(10,1).T
 
     #scale values
-    scaled_values=con.scaler_pkl.transform(valarray)
+    scaled_values=con.SCALER_PKL.transform(valarray)
     #predict output
-    output=con.svc_pkl.predict(scaled_values)
+    output=con.SVC_PKL.predict(scaled_values)
 
     #convert output into categorical variable
     incomerange=Income[output[0]]
@@ -35,9 +35,9 @@ class PythonAPI(Resource):
     valarray=valarray.reshape(10,1).T
 
     #scale values
-    scaled_values=con.scaler_pkl.transform(valarray)
+    scaled_values=con.SCALER_PKL.transform(valarray)
     #predict output
-    output=con.svc_pkl.predict(scaled_values)
+    output=con.SVC_PKL.predict(scaled_values)
 
     #convert output into categorical variable
     incomerange=Income[output[0]]
