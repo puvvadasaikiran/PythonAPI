@@ -47,9 +47,9 @@ class PythonAPI(Resource):
     valarray=valarray.reshape(10,1).T
 
     #scale values
-    scaled_values=SCALER_PKL.transform(valarray)
+  
     #predict output
-    output=SVC_PKL.predict(scaled_values)
+    output=SVC_PKL.predict(valarray)
 
     #convert output into categorical variable
     incomerange=Income[output[0]]
